@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SELECT</title>
+        <link href="css/royal.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+       
+        <div class="bodyborder">    
+        <div style="width: 1000px; margin: auto;"><%@include file="view/Header.jsp" %></div>
+        
+        <div class="maindiv">  
+            <div style="width: 150px;"><%@include file="view/Left-Menu.jsp" %></div>
+            <div class="rightmenu" style="width: 150px; float: left; ">
+                
+                 
+                
+                <div style="padding-left: 330px;margin-top: 30px;"><b>FRIENDS_DETAILS</b></div>
+                <div style="margin-left: 120px;margin-top: 10px">
+                    <table style="width:600px;">
+                        <tr>
+                          <th>Phone No.</th>
+                          <th>Friends Name</th> 
+                          <th>Email ID</th>
+                          <th>Address</th>
+                          <th>Login</th>
+                        </tr>
+                        
+                        
+                         <tr>
+                             <td style="width:100px" class="row-pro"><%= rs.getString(1)%></td>
+                            <td style="width:100px" class="row-pro" ><%= rs.getString(2)%></td>
+                            <td style="width:100px"  class="row-pro" ><%= rs.getString(3)%></td>
+                            <td style="width:100px"  class="row-pro" ><%= rs.getString(4)%></td>	
+                            <td style="width:100px"  class="row-pro" ><%= rs.getString(5)%></td>
+
+                         </tr>
+                        
+			
+                         <tr>
+                             <td style="width:100px" class="row-pro"><%= rs.getString(1)%></td>
+                            <td style="width:100px" class="row-pro" ><%= rs.getString(2)%></td>
+                            <td style="width:100px"  class="row-pro" ><%= rs.getString(3)%></td>
+                            <td style="width:100px"  class="row-pro" ><%= rs.getString(4)%></td>	
+                            <td style="width:100px"  class="row-pro" ><%= rs.getString(5)%></td>
+
+                         </tr>
+                        
+			
+                        
+                    </table>
+                </div>  
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+        <div style="width: 1000px; margin: auto; margin-top:none;"><%@include file="view/Footer.jsp" %></div>
+        </div>
+    </body>
+  
+</html>
+

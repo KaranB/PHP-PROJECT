@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>UPDATE</title>
+        <link href="css/royal.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="bodyborder">
+         <div style="width: 1000px; margin: auto;"><%@include file="view/Header.jsp" %></div>
+        
+        <div class="maindiv">  
+            <div style="width: 150px;"><%@include file="view/Left-Menu.jsp" %></div>
+            <div class="rightmenu" style="  margin-left: 150px;">
+                
+                
+                <form class="form-pro"> 
+                    <div>
+                        
+                        <fieldset class="field-pro">
+                            <legend><b>UPDATE SECTION</b></legend>
+                        
+                            
+                             
+                        
+                                                     
+                            
+                            <div class="maintext">
+                                <div class="text1">Phone No:</div>
+                                <div class="text2"> <input type="text" name="phone" value="<% if(request.getParameter("btn3")!=null){out.print(rs.getString(1));} %>"></div>
+                            </div>
+                            
+                            <div class="maintext">
+                                <div class="text1">Friends Name:</div>
+                                <div class="text2"><input type="text" name="name" value="<% if(request.getParameter("btn3")!=null){out.print(rs.getString(2));} %>"></div>
+                            </div>
+                            
+                                 
+                            <div class="maintext">
+                                <div class="text1">Email:</div>
+                                <div class="text2"> <input type="email" name="email" value="<% if(request.getParameter("btn3")!=null){out.print(rs.getString(3));} %>"></div>
+                            </div>    
+                           
+                            <div class="maintext">
+                                <div class="text1">Address:</div>
+                                <div class="text2"> <input type="text" name="address" value="<% if(request.getParameter("btn3")!=null){out.print(rs.getString(4));} %>"></div>
+                            </div>   
+                            
+                            <div class="maintext">
+                                
+                                <div class="text2"> <input type="submit" name="btn3" value="Fetch"></div>
+                            </div>
+                            
+                             <div class="maintext">
+                                
+                                <div class="text2"> <input type="submit" name="btn4" value="Update"></div>
+                            </div>
+                            
+                       
+                             
+                                                                         
+                                                                         
+   
+                
+                
+              
+                
+                 </fieldset>
+                        
+                        </div>
+                </form>  
+                
+            </div>
+        </div>
+        
+            
+            
+          <div style="width: 1000px; margin: auto; margin-top:none;"><%@include file="view/Footer.jsp" %></div>
+        </div>
+    </body>
+</html>
